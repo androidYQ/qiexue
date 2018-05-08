@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <include
+        android:id="@+id/ll_head"
+        layout="@layout/activity_head" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_edit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/login_button_left_or_right_distance"
+        android:layout_marginRight="@dimen/login_button_left_or_right_distance"
+        android:layout_marginTop="60dp"
+        >
+
+        <ImageView
+            android:id="@+id/img_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_cancelwords"/>
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/img_cancel"
+            android:background="@null"
+            android:textSize="@dimen/text_normal_size"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/gray_light"
+            android:hint="@string/set_nickname_hint"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line_color"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_button_height"
+        android:background="@drawable/login_button_shape"
+        android:layout_marginLeft="@dimen/login_button_left_or_right_distance"
+        android:layout_marginRight="@dimen/login_button_left_or_right_distance"
+        android:layout_marginTop="30dp"
+        android:textSize="@dimen/text_normal_big_size"
+        android:textColor="@color/white"
+        android:text="完成"/>
+
+
+</LinearLayout>

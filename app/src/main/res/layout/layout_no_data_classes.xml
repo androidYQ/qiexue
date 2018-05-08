@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pic_empty_noclass"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_normal_size"
+        android:textColor="@color/color_999999"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="还未加入任何班级，先去创建一个吧"/>
+    <Button
+        android:id="@+id/bt_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_button_height"
+        android:layout_below="@+id/rl_edit"
+        android:background="@drawable/login_button_shape"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:textSize="@dimen/text_normal_big_size"
+        android:textColor="@color/white"
+        android:text="立即创建"/>
+</LinearLayout>

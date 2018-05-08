@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:background="@drawable/dialog_register_border"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/pic_classcreateok" />
+
+        <TextView
+            android:id="@+id/tv_successTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账号创建成功"
+            android:textColor="@color/color_333333"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/tv_classTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_normal_size"
+            android:textColor="@color/color_333333"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/bt_create"
+            android:text="你现在可以创建班级了"/>
+
+        <Button
+            android:id="@+id/bt_create"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="@dimen/login_button_left_or_right_distance"
+            android:layout_marginRight="@dimen/login_button_left_or_right_distance"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/login_button_shape"
+            android:text="立即创建"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_normal_big_size" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cancelpopup"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

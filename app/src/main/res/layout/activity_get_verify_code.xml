@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <include
+        android:id="@+id/ll_head"
+        layout="@layout/activity_head" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_normal_size"
+        android:textColor="@color/color_999999"
+        android:layout_gravity="center_horizontal"
+        android:text="短信验证码已发送到15618850919"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="55dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/verify_input_height"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp">
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="5dp"
+            android:numColumns="6"
+            >
+
+        </GridView>
+        <EditText
+            android:id="@+id/et_verify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/verify_cursor_bg"
+            android:textSize="1sp"
+            android:textColor="@color/white"
+            android:cursorVisible="false"
+            android:inputType="number"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_x_light"
+        android:textSize="@dimen/text_normal_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="59秒后可重新发送验证码"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/head_color" />
+    <!-- 设置矩形的四个角为弧形 -->
+    <!-- android:radius 弧形的半径 -->
+    <gradient android:startColor="@color/login_button_start_color"
+        android:endColor="@color/login_button_end_color"
+        android:angle="0"/>
+
+    <corners
+        android:bottomLeftRadius="25dp"
+        android:bottomRightRadius="25dp"
+        android:topLeftRadius="25dp"
+        android:topRightRadius="25dp" />
+</shape>

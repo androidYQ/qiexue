@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_color"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <include
+        android:id="@+id/ll_head"
+        layout="@layout/activity_head" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rl_other"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/post_height_47"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="@dimen/margin_left_or_right_15"
+        android:paddingRight="@dimen/margin_left_or_right_15"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/et_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:textSize="@dimen/text_normal_size"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/gray_light"
+            android:layout_toLeftOf="@+id/tv_sure"
+            android:layout_marginRight="10dp"
+            android:maxLength="10"
+            android:hint="描述一下你的职务吧"/>
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_normal_big_size"
+            android:textColor="@color/main_theme_color"
+            android:text="确定"/>
+    </RelativeLayout>
+
+</LinearLayout>

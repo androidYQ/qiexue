@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@drawable/pic_bg_invitepeple"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#4A3510"
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:text="2017春初三数学集训班级升级班"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_above="@+id/bt_invite"
+            android:layout_marginBottom="40dp"
+            >
+        <TextView
+            android:id="@+id/tv_successTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="你现在可以邀请学员啦"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_normal_size" />
+        <TextView
+            android:id="@+id/tv_classTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_normal_small_size"
+            android:textColor="@color/color_999999"
+            android:layout_marginTop="13dp"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/bt_create"
+            android:text="也可在 工作台-班级管理 里去邀请学员"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_invite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="@dimen/login_button_left_or_right_distance"
+            android:layout_marginRight="@dimen/login_button_left_or_right_distance"
+            android:background="@drawable/login_button_shape"
+            android:text="立即邀请"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_normal_big_size" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cancelpopup"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
